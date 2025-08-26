@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Novo Personagem</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 2em auto; background-color: #f4f4f4; }
+        .container { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; }
+        label { display: block; margin-bottom: 5px; color: #666; }
+        input { width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Criar Novo Personagem de RPG</h2>
+        <form action="processa_cadastro.php" method="POST">
+            <div>
+                <label for="nome">Nome do Personagem:</label>
+                <input type="text" id="nome" name="nome_personagem" required>
+            </div>
+            <div>
+                <label for="classe">Classe:</label>
+                <input type="text" id="classe" name="classe_personagem" required>
+            </div>
+            <div>
+                <label for="raca">Raça:</label>
+                <input type="text" id="raca" name="raca_personagem" required>
+            </div>
+            <button type="submit">Salvar Personagem</button>
+        </form>
+    </div>
+</body>
+</html>
